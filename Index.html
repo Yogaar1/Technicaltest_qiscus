@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Chat Layout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="profile">
+                <img src="/Asset/logo MB.png" alt="Logo Message Box" class="logo">
+            </div>
+            <div class="tabs">
+                <button class="tab active">All</button>
+                <button class="tab">Personal</button>
+                <button class="tab">Groups</button>
+            </div>
+            <div class="chat-list" id="chat-list"></div>
+        </div>
+
+        <!-- Chat Area -->
+        <div class="chat-area" id="chat-area">
+            <div class="chat-header">
+                <img src="" alt="Room Avatar" class="avatar" id="room-avatar">
+                <div>
+                    <span class="chat-name" id="room-name">Product A</span>
+                </div>
+            </div>
+            <div class="messages"></div>
+            <div class="message-input">
+                <input type="text" id="messageInput" placeholder="Write a message...">
+                <button id="sendMessageBtn">Send</button>
+            </div>
+        </div>
+
+        <!-- Details Sidebar -->
+        <div class="details-sidebar">
+            <div class="group-info">
+                <img src="" alt="Group Avatar" class="avatar" id="group-avatar">
+                <div>
+                    <span class="group-name" id="group-name">Group Name</span>
+                    <p id="group-id">Group ID</p>
+                </div>
+            </div>
+            <div class="participants">
+                <h3>Participants</h3>
+                <ul id="participant-list"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
